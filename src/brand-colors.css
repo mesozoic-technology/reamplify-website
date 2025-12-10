@@ -1,0 +1,49 @@
+/* (RE) - AMPLIFY Brand Colors */
+
+:root {
+  /* Primary Colors */
+  --brand-electric-mint: #5EFFD3;
+  --brand-slate-navy: #3d4f5c;
+  
+  /* Secondary Colors */
+  --brand-coral: #FF6B9D;
+  --brand-amber: #FFB84D;
+  --brand-violet: #9D7BFF;
+  
+  /* Neutral Colors */
+  --brand-gray-50: #F9FAFB;
+  --brand-gray-100: #F3F4F6;
+  --brand-gray-200: #E5E7EB;
+  --brand-gray-300: #D1D5DB;
+  --brand-gray-400: #9CA3AF;
+  --brand-gray-500: #6B7280;
+  --brand-gray-600: #4B5563;
+  --brand-gray-700: #374151;
+  --brand-gray-800: #1F2937;
+  --brand-gray-900: #111827;
+  
+  /* Semantic Colors */4
+  --brand-success: #10B981;
+  --brand-warning: #F59E0B;
+  --brand-error: #EF4444;
+  --brand-info: #3B82F6;
+}
+
+/* Alternative Format - CSS Classes */
+.bg-electric-mint { background-color: #5EFFD3; }
+.bg-slate-navy { background-color: #3d4f5c; }
+.bg-coral { background-color: #FF6B9D; }
+.bg-amber { background-color: #FFB84D; }
+.bg-violet { background-color: #9D7BFF; }
+
+.text-electric-mint { color: #5EFFD3; }
+.text-slate-navy { color: #3d4f5c; }
+.text-coral { color: #FF6B9D; }
+.text-amber { color: #FFB84D; }
+.text-violet { color: #9D7BFF; }
+
+.border-electric-mint { border-color: #5EFFD3; }
+.border-slate-navy { border-color: #3d4f5c; }
+.border-coral { border-color: #FF6B9D; }
+.border-amber { border-color: #FFB84D; }
+.border-violet { border-color: #9D7BFF; }
