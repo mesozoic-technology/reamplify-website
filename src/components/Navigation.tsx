@@ -34,45 +34,12 @@ export function Navigation() {
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-[#5EFFD3] p-2"
           >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
+            <span className="text-[#5EFFD3] text-lg" style={{ textShadow: '0 0 20px rgba(94, 255, 211, 0.4)' }}>
+              Coming in 2026
+            </span>
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <nav className="md:hidden py-4 space-y-4 border-t border-[#5EFFD3]/20">
-            <a 
-              href="#services" 
-              className="block text-[#5EFFD3]/80 hover:text-[#5EFFD3] transition-colors text-sm"
-              onClick={() => setIsOpen(false)}
-            >
-              Product
-            </a>
-            <a 
-              href="#about" 
-              className="block text-[#5EFFD3]/80 hover:text-[#5EFFD3] transition-colors text-sm"
-              onClick={() => setIsOpen(false)}
-            >
-              Resources
-            </a>
-            <a 
-              href="#contact" 
-              className="block text-[#5EFFD3]/80 hover:text-[#5EFFD3] transition-colors text-sm"
-              onClick={() => setIsOpen(false)}
-            >
-              Legal
-            </a>
-            <button 
-              onClick={() => {
-                setIsOpen(false);
-                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="w-full px-6 py-2 bg-[#5EFFD3] text-[#000000] rounded-lg hover:scale-105 transition-transform text-sm"
-            >
-              Launch App
-            </button>
-          </nav>
-        )}
       </div>
     </nav>
   );

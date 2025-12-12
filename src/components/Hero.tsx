@@ -1,4 +1,4 @@
-import { Zap, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import logoImage from 'figma:asset/026f891de06f2b272124350ed2ffdb64feef8499.png';
 
 export function Hero() {
@@ -10,18 +10,20 @@ export function Hero() {
           <img 
             src={logoImage} 
             alt="(RE) - Amplify Logo" 
-            className="w-32 h-32 object-contain brightness-0 invert"
+            className="w-24 h-24 md:w-32 md:h-32 object-contain brightness-0 invert"
             style={{ filter: 'drop-shadow(0 0 30px rgba(94, 255, 211, 0.6))' }}
           />
         </div>
         
-        <h1 className="text-[#5EFFD3] mb-6 text-7xl lg:text-8xl brightness-125" style={{ 
+        {/* Responsive heading: small on mobile, large on desktop */}
+        <h1 className="text-[#5EFFD3] mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl brightness-125" style={{ 
           textShadow: '0 0 50px rgba(94, 255, 211, 1), 0 0 100px rgba(94, 255, 211, 0.6)' 
         }}>
           Use Your Crypto To Earn Like An Insurer
         </h1>
         
-        <p className="text-[#5EFFD3] text-4xl max-w-2xl mx-auto mb-12 brightness-110" style={{
+        {/* Responsive subheading */}
+        <p className="text-[#5EFFD3] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl max-w-2xl mx-auto mb-12 brightness-110" style={{
           textShadow: '0 0 30px rgba(94, 255, 211, 0.5)'
         }}>
           Deposit crypto assets and 5-13% extra via secure reinsurance-backed yield
@@ -37,7 +39,6 @@ export function Hero() {
             <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
           </button>
         </div>
-
       </div>
 
       {/* Scroll Indicator */}
